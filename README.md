@@ -1,7 +1,10 @@
 go-flags: a go library for parsing command line arguments
 =========================================================
 
-[![GoDoc](https://godoc.org/github.com/jessevdk/go-flags?status.png)](https://godoc.org/github.com/jessevdk/go-flags) [![Build Status](https://travis-ci.org/jessevdk/go-flags.svg?branch=master)](https://travis-ci.org/jessevdk/go-flags) [![Coverage Status](https://img.shields.io/coveralls/jessevdk/go-flags.svg)](https://coveralls.io/r/jessevdk/go-flags?branch=master)
+[![GoDoc](https://godoc.org/github.com/miraiex/go-flags?status.png)](https://godoc.org/github.com/miraiex/go-flags)  
+
+> This library is originally created by [jessevdk](https://github.com/jessevdk/go-flags). Credit and copyright goes
+> to the original author. 
 
 This library provides similar functionality to the builtin flag library of
 go, but provides much more functionality and nicer formatting. From the
@@ -136,4 +139,4 @@ fmt.Printf("Remaining args: %s\n", strings.Join(args, " "))
 // Remaining args: arg1 arg2 arg3
 ```
 
-More information can be found in the godocs: <http://godoc.org/github.com/jessevdk/go-flags>
+More information can be found in the godocs: <http://godoc.org/github.com/miraiex/go-flags>
