@@ -552,7 +552,7 @@ func (p *Parser) parseOption(s *parseState, name string, option *Option, canarg 
 			arg = s.pop()
 
 			if validationErr := option.isValidValue(arg); validationErr != nil {
-				return newErrorf(ErrExpectedArgument, validationErr.Error())
+				return newErrorf(ErrExpectedArgument, "%s", validationErr.Error())
 			} else if p.Options&PassDoubleDash != 0 && arg == "--" {
 				return newErrorf(ErrExpectedArgument, "expected argument for flag `%s', but got double dash `--'", option)
 			}
